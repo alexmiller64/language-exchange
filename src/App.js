@@ -16,7 +16,7 @@ import Home from './pages/Home';
 function Navigation (props) {
   return (
     <nav className={classnames({ scrolled: props.scrolled})}>
-      <Link to={'/home'}>LANGUAGE EXCHANGE</Link>
+      <Link to={'/'}>LANGUAGE EXCHANGE</Link>
       <Link to={'/'} >LOGO HERE</Link>
       <Link to={'/'}>CHAT ROOM</Link>
     </nav>
