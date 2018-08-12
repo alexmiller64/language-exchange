@@ -1,0 +1,57 @@
+// breakpoints
+$XXS:   330px;
+$XS:    410px;
+$S:     600px;
+$M:     768px;
+$L:     992px;
+$XL:    1241px;
+$XXL:   1364px;
+
+// media queries (desktop first)
+@mixin MQ($canvas) {
+    @if $canvas == XXS {
+        @media only screen and (max-width: $XXS) { @content; }
+    }
+    @else if $canvas == XS {
+        @media only screen and (max-width: $XS) { @content; }
+    }
+    @else if $canvas == S {
+        @media only screen and (max-width: $S) { @content; }
+    }
+    @else if $canvas == M {
+        @media only screen and (max-width: $M) { @content; }
+    }
+    @else if $canvas == L {
+        @media only screen and (max-width: $L) { @content; }
+    }
+    @else if $canvas == XL {
+        @media only screen and (max-width: $XL) { @content; }
+    }
+    @else if $canvas == XXL {
+        @media only screen and (max-width: $XXL) { @content; }
+    }
+    @else if $canvas == project {
+        @media only screen and (max-width: $project) { @content; }
+    }
+    @else {
+        @media only screen and (max-width: $canvas) { @content; }
+    }
+}
+
+/* brand colours */
+
+
+
+/* standard colours */
+
+
+
+/* font size */
+
+
+/* font family */
+$ff-main: 'Comfortaa', cursive;
+$ff-sub: 'Source Code Pro', monospace;
+
+
+/* line height */

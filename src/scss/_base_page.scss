@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    // border: 1px solid deeppink;
+}
+
+.page-wrap {
+    padding: 120px 0 0 0;
+    @include MQ (S) {
+        padding: 100px 0 0 0;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 0 20px;
+    @include MQ (XL) {
+        padding: 0 50px;
+    }
+    @include MQ (S) {
+        padding: 0 20px;
+    }
+}
